@@ -6,7 +6,7 @@ from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://cyberchicmodels.ai", "https://www.cyberchicmodels.ai", "http://localhost:3000", "http://localhost:5173"])
 
 # Database configuration
 DB_USER = os.environ.get("DB_USER", "postgres")
